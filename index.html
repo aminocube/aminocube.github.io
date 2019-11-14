@@ -1,280 +1,1021 @@
-<!DOCTYPE html>
-<html lang="ru">
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="ru"><!--<![endif]-->
 <head>
-  <title>CUBE Amino</title>
-  <meta charset="utf-8">
-  <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>CUBE Amino</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/colorbox.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+	
+    <!--[if lte IE 8]>
+        <script src="js/html5.js"></script>
+    <![endif]-->		
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 </head>
 <body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>CUBE</p>
-  </a>
-  <!-- <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>-->
-</div>
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>	
+	
+	<!-- Primary Page Layout
+	================================================== -->
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>CUBE Amino</p>
-          </a>
-          <button class="header--cta cta">Связаться с нами</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Главная</span></li>
-            <li><span>Администрация</span></li>
-            <li><span>О нас</span></li>
-            <li><span>Контакты</span></li>
-            <!--<li><span>Связаться</span></li>!-->
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Ищешь<br>Ламповую<br>Компанию ?</h1>
-                <button class="cta">Мы тебя ждём
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Развлечения</h3>
-                  <p>Рейды чатов для поднятия настроения окружающих, локальные мемы амино.</p>
-                </a>
-                <a href="#0">
-                  <h3>Защита</h3>
-                  <p>Вас унизили и кикнули с чата, пишите в телеграм мы добъёмся спроведливости!</p>
-                </a>
-                <a href="#0">
-                  <h3>Поддержка</h3>
-                  <p>Наши ребята, поддержат вас в трудную минуту вашей жизни.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Администраторы</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="http://aminoapps.com/p/70ahmx">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Quint</p>
-                      <p class="slider--item-description">Заместитель, с вопросами по приёму и развитию писать ему.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="http://aminoapps.com/p/d8912v">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">СOOKIE</p>
-                      <p class="slider--item-description">Основатель чата CUBE, если вам нужна помощь писать в телегу.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Идёт набор</p>
-                      <p class="slider--item-description">Должность модератора свободна, если вы заитересованны писать в телегу @mrcook1e.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>Мы<br> Ждём<br>Только<br>Активных</h2>
-                <a href="https://t.me/cubeamino">Наш телеграмм
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="https://shawty.club">
-                  <h3>Защита</h3>
-                </a>
-                <a href="http://aminoapps.com/p/v8obqp">
-                  <h3>Развлечения</h3>
-                </a>
-                <a href="https://t.me/mrcook1e">
-                  <h3>Поддержка</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Мы тебя ждём!</p>
-                     <!-- <a href="mailto:ouremail@gmail.com"></a>!-->
-                    <!-- <a href="tel:+148126287560">Или в другую соц.сеть</a>!-->
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="http://aminoapps.com/p/v8obqp">Amino</a></li>
-                    <li><a href="https://t.me/cubeamino">Telegram</a></li>
-                  <!-- <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>!-->
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Главная</li>
-    <li>Администрация</li>
-    <li>О нас</li>
-    <li>Контакты</li>
-    <!--<li>Связаться</li> !-->
-  </ul>
-</div>
+	
+	
+	<div id="menu-wrap">
+		<ul class="slimmenu">
+			<li> 
+				<a href="javascript:goTo('home');">Главная</a>
+			</li>
+			<li>
+				<a href="javascript:goTo('about');">О нас</a>
+			</li>
+			<li> 
+				<a href="javascript:goTo('services');">Набор</a>
+			</li>
+			<li>
+				<a href="javascript:goTo('folio');">Галерея</a>
+			</li>
+			<!--<li>
+				<a href="javascript:goTo('contact');">contact</a>
+			</li>-->
+			<li>
+				<a href="javascript:goTo('blog');">Новости</a>
+			</li>
+		</ul>
+	</div>	
+	<div class="logo"></div>
+	
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+	<section id="content">
+	
+		<article id="home" class="active1"> 
+
+			
+			<div class='pageblock' id='fullscreen'>
+				<div class='slider'>
+					<div class='slide' id="first">
+						<div class='slidecontent'>
+							<span class="headersur">Хочешь ламповой атмосферы ?</span>
+							<h1>УСТАЛ ОТ СРАЧЕЙ ?</h1>
+						</div>
+					</div>
+					<div class='slide' id="sec">
+						<div class='slidecontent'>
+							<span class="headersur">Мы поможем украсить твой профиль</span>
+							<h1>КРАСИВЫЕ ПРОФИЛИ</h1>
+						</div>
+					</div>
+					<div class='slide' id="thirth">
+						<div class='slidecontent'>
+							<span class="headersur">Весь контент в телеграме </span>
+							<h1>МЕМЫ & ПИКЧИ</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</article>
+
+
+
+		
+		<article id="about" class="off"> 
+	
+
+			<a href="javascript:goTo('home');">
+				<div class="link-to-left"> 
+					<h6>00</h6>
+					<h4>Главная</h4>
+				</div>	
+			</a>	
+			<a href="javascript:goTo('services');">
+				<div class="link-to-right"> 
+					<h6>02</h6>
+					<h4>Правила</h4>
+				</div>	
+			</a>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h1><span>01</span> о нас</h1>
+				</div>	
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>ЧЕМ МЫ ЗАНИМАЕМСЯ</h4>
+					<div class="subtext">в приложении Amino</div>
+				</div>
+				<div class="clear"></div>
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="process">
+							<div class="eight columns"> 
+								<h5><span>01</span>gif</h5>
+								<p>Мы, создаём гифки для профилей, а также фоны для чатов. Также мы ищем очень крутые и красивые гифки анимации, сделанные профессионалами.</p>
+							</div>	
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/bulb.gif" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="process">
+							<div class="eight columns"> 
+								<h5><span>02</span> Аватарки</h5>
+								<p>Делаем аватарки для самых активных пользователей, чем больше вы сделаете для нас, тем больше мы дадим вам !</p>
+							</div>
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/mockups.gif" alt=""/>
+								</div>	
+							</div>
+						</div>
+					</div>	
+					<div class="item">
+						<div class="process">
+							<div class="eight columns"> 
+								<h5><span>03</span> Рейды</h5>
+								<p>Для веселья некоторые пользователи собираются, ставим тематические аватарки и залетаем в рандомные чаты.</p>
+							</div>
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/design.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="process">
+							<div class="eight columns"> 
+								<h5><span>04</span> Мемы & Пикчи </h5>
+								<p>Много лакальных мемов и пикчей аниме amino, есть в нашем телеграме. Если у вас тоже есть мы будем рады вас видеть!</p>
+							</div>
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/deve.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="process">
+							<div class="eight columns"> 
+								<h5><span>05</span>Поддержка</h5>
+								<p>Если вас обидели в чате, мы поможем положить этот чат, а именно организатора чат.</p>
+							</div>
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/launch.jpg" alt=""/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>АДМИНИСТРАЦИЯ</h4>
+					<div class="subtext">у вас есть вопросы, пишите мы не кусаемся</div>
+				</div>
+				<div class="clear"></div>
+				<div id="owl-demo1" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="team-wrap">
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/team1.jpg" alt=""/>
+								</div>
+							</div>
+							<div class="eight columns"> 
+								<h5><span>Основатель</span>COOKIE</h5>
+								<div class="subtext-team">Человек который основал и создал чат CUBE и сообщество.</div>
+								<p>Люблю дизайн, делаю аватарки и оформления для профиля. Готов всегда помочь, если вас обидели. По поводу приёма в CUBE писать сюда.</p> 
+								<div class="social-team">
+									<ul class="team-social">
+										<li class="icon-team"><a href="http://aminoapps.com/p/d8912v">&#xf170;</a></li>
+										<li class="icon-team"><a href="https://t.me/mrcook1e">&#xf173;</a></li>
+										<li class="icon-team"><a href="https://vk.com/mrcook1e">&#xf189;</a></li>
+									</ul>	
+								</div>	
+							</div>	
+						</div>
+					</div>
+					<div class="item">
+						<div class="team-wrap">
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/team2.jpg" alt=""/>
+								</div>	
+							</div>
+							<div class="eight columns"> 
+								<h5><span>Заместитель кун</span>Quint</h5>
+								<div class="subtext-team">Человек который, был с нами с самого начала проекта.</div>
+								<p>Он пока-что ничего о себе не рассказал, как раскажет сайт будет обнавлён</p>
+								<div class="social-team">
+									<ul class="team-social">
+										<li class="icon-team"><a href="http://aminoapps.com/p/70ahmx">&#xf170;</a></li>
+										<li class="icon-team"><a href="https://t.me/thequinti">&#xf173;</a></li>
+										<!-- <li class="icon-team"><a href="https://vk.com/mrcook1e">&#xf189;</a></li>-->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="item">
+						<div class="team-wrap">
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/team3.jpg" alt=""/>
+								</div>
+							</div>
+							<div class="eight columns"> 
+								<h5><span>Заместитель злая тян</span>ТВАРЬ</h5>
+								<div class="subtext-team">Хорошо знакомая личность, которой я могу доверять.</div>
+								<p>Она пока-что ничего о себе не рассказал, как раскажет сайт будет обнавлён</p>
+								<div class="social-team">
+									<ul class="team-social">
+										<li class="icon-team"><a href="http://aminoapps.com/p/a7nqvq">&#xf170;</a></li>
+										<li class="icon-team"><a href="https://t.me/Creature_666">&#xf173;</a></li>
+										<!-- <li class="icon-team"><a href="https://vk.com/mrcook1e">&#xf189;</a></li>-->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="team-wrap">
+							<div class="eight columns"> 
+								<div class="border-wrap"> 
+									<img src="images/team4.jpg" alt=""/>
+								</div>
+							</div>
+							<div class="eight columns"> 
+								<h5><span>Заместитель добрая тян</span>MiLene</h5>
+								<div class="subtext-team">Человек который, был с нами с самого начала проекта.</div>
+								<p>Она пока-что ничего о себе не рассказал, как раскажет сайт будет обнавлён</p>
+								<div class="social-team">
+									<ul class="team-social">
+										<li class="icon-team"><a href="http://aminoapps.com/p/5m3t13">&#xf170;</a></li>
+										<!--<li class="icon-team"><a href="https://t.me/mrcook1e">&#xf173;</a></li>-->
+										<!-- <li class="icon-team"><a href="https://vk.com/mrcook1e">&#xf189;</a></li>-->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>AMINO</h6>
+							<p>Информация о приложении:<br>
+							<div class="cl-effect-7">
+								<a href="https://aminoapps.com/c/russkii-anime"><span>Anime Amino</span></a>
+								<a href="https://aminoapps.com"><span>Amino</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>ОСНОВАТЕЛЬ</h6>
+							<p><span class="icon-footer">&#xf095;</span>+7 (996) 770-31-72</p>
+							<a href="mail:icook1e@ya.ru"><p><span class="icon-footer">&#xf086;</span>icook1e@ya.ru</p></a>
+							<p>Отвечаю по выходным:<br>
+							<span>9:00 - 21:00 (+3.00 GMT)</span></p>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<h6>МЫ ТЕБЯ ЖДЁМ</h6>
+						<div class="cl-effect-7">
+							<a href="https://t.me/cubeamino"><span class="twitter-color" >telegram</span></a>
+							<a href="http://aminoapps.com/p/g9b9x2"><span class="google-color" >amino chat</span></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sixteen columns"> 
+						<div class="footer-bottom"> 
+							<p>Copyright © 2014</p>
+							<a href="https://vk.com/mrcook1e"><img src="images/logo.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+	
+		
+		
+		</article>
+
+
+
+		
+		<article id="services" class="off"> 
+		
+		
+			<a href="javascript:goTo('about');">
+				<div class="link-to-left"> 
+					<h6>01</h6>
+					<h4>о нас</h4>
+				</div>	
+			</a>	
+			<a href="javascript:goTo('folio');">
+				<div class="link-to-right"> 
+					<h6>03</h6>
+					<h4>Галерея</h4>
+				</div>	
+			</a>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h1><span>02</span>Набор</h1>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>Что мы хотим видеть в вас</h4>
+					<div class="subtext">желательные черты</div>
+				</div>
+					<div class="sixteen columns">
+						<div id="sync1" class="owl-carousel">
+							<div class="item" >
+								<img src="images/ser4.png" alt=""/>
+								<h5>Дружелюбие</h5> 
+								<p>Вы должны не воспренимать срачеров, относиться ко всем одинакого хорошо и не агриться на людей в серъёзную.</p>
+							</div>
+							<div class="item" >
+								<img src="images/ser5.png" alt=""/>
+								<h5>Креативность</h5> 
+								<p>Умение рисовать на бумаге или же на граф.планшете, программирование на различных языках, написание статей и так далее только приветствуется.</p>
+							</div>
+							<div class="item" >
+								<img src="images/ser6.png" alt=""/>
+								<h5>Адекватность</h5> 
+								<p>Относиться к амино, не более чем к приложению для фанатов аниме. Не кричать не перебивать и не нести ахинею в чат.</p>
+							</div>
+							<div class="item" >
+								<img src="images/ser7.png" alt=""/>
+								<h5>Возраст</h5> 
+								<p>Вам должно быть не меньше 14 лет, могут быть исключения, если вы мыслите более взросло. Также не маловажен голос, он не должен раздражать состав.</p>
+							</div>
+						</div>
+
+						<div id="sync2" class="owl-carousel">
+							<div class="item" ><img src="images/ser4.png" alt=""/></div>
+							<div class="item" ><img src="images/ser5.png" alt=""/></div>
+							<div class="item" ><img src="images/ser6.png" alt=""/></div>
+							<div class="item" ><img src="images/ser7.png" alt=""/></div>
+						</div>					
+					</div>
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="services-offers">
+					<div class="seven columns">
+						<h5><span class="background-ser1">01</span> ПРАВИЛА ЧАТА</h5>
+					</div>
+					<div class="three columns">
+						<ul class="border-left-ser">
+							<li><p>Не навязываться</p></li>
+							<li><p>Не ругаться</p></li> 
+							<li><p>Не сливать инфу</p></li> 
+						</ul>
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Не спамить</p></li> 
+							<li><p>Не пиарить</p></li> 
+							<li><p>Не крысить</p></li> 
+						</ul>
+					</div>
+					<div class="three columns">
+						<ul class="border-left-ser">
+							<li><p>Не развращать</p></li> 
+							<li><p>Не виртить</p></li> 
+							<li><p>Нет эротике</p></li>  
+						</ul>
+					</div>
+				</div>	
+				<div class="sixteen columns"> 
+					<div class="line-separator-ser"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="services-offers">
+					<div class="seven columns">
+						<h5><span class="background-ser2">02</span> ПРАВИЛА ГОЛОСА</h5> 
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Не орать</p></li>
+							<li><p>Не раздрожать</p></li> 
+							<li><p>Не спамить</p></li> 
+						</ul>
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Не сраться</p></li>
+							<li><p>Не дрочить</p></li> 
+							<li><p>Не харкаться</p></li> 
+						</ul>
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Не пердеть</p></li>
+							<li><p>Не надоедать</p></li> 
+							<li><p>Микро 14+</p></li> 
+						</ul>
+					</div>
+				</div>	
+				<div class="sixteen columns"> 
+					<div class="line-separator-ser"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="services-offers">
+					<div class="seven columns">
+						<h5><span class="background-ser3">03</span> ПРОЧИЕ ПРАВИЛА</h5> 
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Соблюдать</p></li>
+							<li><p>Правила</p></li> 
+							<li><p>Anime & Amino</p></li> 
+						</ul> 
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Соблюдать</p></li>
+							<li><p>Правила</p></li> 
+							<li><p>Чата CUBE</p></li> 
+						</ul> 
+					</div>
+					<div class="three columns"> 
+						<ul class="border-left-ser">
+							<li><p>Соблюдать</p></li>
+							<li><p>Правила</p></li> 
+							<li><p>Amino</p></li> 
+						</ul> 
+					</div>
+				</div>	
+				<div class="clear"></div>
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>Состав</h4>
+					<div class="subtext">ниже наше люди</div>
+				</div>
+				<div class="sixteen columns"> 
+					<div id="owl-demo2" class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="images/logo/1.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/2.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/3.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/4.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/5.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/6.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/7.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/8.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/1.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/2.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/3.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/4.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/5.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/6.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/7.png" alt=""/>
+						</div>
+						<div class="item">
+							<img src="images/logo/8.png" alt=""/>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>	
+			<div class="footer">
+				<div class="container">
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>AMINO</h6>
+							<p>Информация о приложении:<br>
+							<div class="cl-effect-7">
+								<a href="https://aminoapps.com/c/russkii-anime"><span>Anime Amino</span></a>
+								<a href="https://aminoapps.com"><span>Amino</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>ОСНОВАТЕЛЬ</h6>
+							<p><span class="icon-footer">&#xf095;</span>+7 (996) 770-31-72</p>
+							<a href="mail:icook1e@ya.ru"><p><span class="icon-footer">&#xf086;</span>icook1e@ya.ru</p></a>
+							<p>Отвечаю по выходным:<br>
+							<span>9:00 - 21:00 (+3.00 GMT)</span></p>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<h6>МЫ ТЕБЯ ЖДЁМ</h6>
+						<div class="cl-effect-7">
+							<a href="https://t.me/cubeamino"><span class="twitter-color" >telegram</span></a>
+							<a href="http://aminoapps.com/p/g9b9x2"><span class="google-color" >amino chat</span></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sixteen columns"> 
+						<div class="footer-bottom"> 
+							<p>Copyright © 2014</p>
+							<a href="https://vk.com/mrcook1e"><img src="images/logo.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		
+		
+		</article>
+
+
+
+		
+		<article id="folio" class="off">
+		
+		
+			<a href="javascript:goTo('services');">
+				<div class="link-to-left"> 
+					<h6>02</h6>
+					<h4>Правила</h4>
+				</div>	
+			</a>	
+			<a href="javascript:goTo('blog');">
+				<div class="link-to-right"> 
+					<h6>04</h6>
+					<h4>Новости</h4>
+				</div>	
+			</a>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h1><span>03</span> Галерея</h1>
+				</div>	
+			</div>
+			<div id="portfolio">		
+			<ul class="portfolio-wrap">
+				<li class="portfolio-box">	
+					<a  class='youtube' href="https://www.youtube.com/embed/mIk4mbeL7Bk?rel=0&amp;wmode=transparent" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/1.jpg" alt="" />	
+						<h6>СЕНКО ЗА 7 МИНУТ</h6> 	
+						<p><span>Кто не видел советуем глянуть c:</span></p> 	
+					</a>	
+				</li>
+				<li class="portfolio-box">	
+					<a  class='youtube' href="https://www.youtube.com/embed/C7WCpF0Mjh8?rel=0&amp;wmode=transparent" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/2.jpg" alt="" />	
+						<h6>Как твоё имя?</h6> 	
+						<p><span>Лучшее рускоязычное AMV</span></p> 	
+					</a>		
+				</li>		
+				<li class="portfolio-box">	
+					<a class='gallery-colorbox' href="images/gallery/3.jpg" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/3.jpg" alt="" />
+						<h6>Обложка для аватарок</h6> 	
+						<p><span>Делал для создания поста в амино</span></p> 
+					</a>				
+				</li>	
+				<li class="portfolio-box">
+					<a class='gallery-colorbox' href="images/gallery/4.jpg" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/4.jpg" alt="" />	
+						<h6>Обложка для фонов</h6> 	
+						<p><span>Делал для создания поста в амино</span></p>
+					</a> 			
+				</li>	
+				<li class="portfolio-box">	
+					<a class='iframe' href="project.html" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/5.jpg" alt="" />
+						<h6>Обложка для чата</h6> 	
+						<p><span>Делал для создания пиара чата</span></p> 		
+					</a>			
+				</li>
+				<li class="portfolio-box">	
+					<a class='vimeo' href="http://player.vimeo.com/video/2285902" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/6.jpg" alt="" />
+						<h6>Обои</h6> 	
+						<p><span>Это делал для себя любимого c:</span></p> 	
+					</a>			
+				</li>	
+				<li class="portfolio-box">
+					<a class='vimeo' href="http://player.vimeo.com/video/2285902" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/7.jpg" alt="" />	
+						<h6>Визитка</h6> 	
+						<p><span>Делал для соклановца</span></p> 
+					</a>			
+				</li>	
+				<li class="portfolio-box">
+					<a class='youtube' href="http://www.youtube.com/embed/Wj7yXUIrZqM?rel=0&amp;wmode=transparent" title="">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="images/gallery/8.jpg" alt="" />	
+						<h6>DxD Hero | AMV</h6> 	
+						<p><span>Моя работа, не судите строго делал первый раз !</span></p> 
+					</a>			
+				</li>	
+			</ul>
+			</div>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>AMINO</h6>
+							<p>Информация о приложении:<br>
+							<div class="cl-effect-7">
+								<a href="https://aminoapps.com/c/russkii-anime"><span>Anime Amino</span></a>
+								<a href="https://aminoapps.com"><span>Amino</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>ОСНОВАТЕЛЬ</h6>
+							<p><span class="icon-footer">&#xf095;</span>+7 (996) 770-31-72</p>
+							<a href="mail:icook1e@ya.ru"><p><span class="icon-footer">&#xf086;</span>icook1e@ya.ru</p></a>
+							<p>Отвечаю по выходным:<br>
+							<span>9:00 - 21:00 (+3.00 GMT)</span></p>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<h6>МЫ ТЕБЯ ЖДЁМ</h6>
+						<div class="cl-effect-7">
+							<a href="https://t.me/cubeamino"><span class="twitter-color" >telegram</span></a>
+							<a href="http://aminoapps.com/p/g9b9x2"><span class="google-color" >amino chat</span></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sixteen columns"> 
+						<div class="footer-bottom"> 
+							<p>Copyright © 2014</p>
+							<a href="https://vk.com/mrcook1e"><img src="images/logo.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		
+		
+		</article>
+
+
+
+		
+		<article id="contact" class="off"> 
+		
+		
+			<a href="javascript:goTo('folio');">
+				<div class="link-to-left"> 
+					<h6>03</h6>
+					<h4>folio</h4>
+				</div>	
+			</a>	
+			<a href="javascript:goTo('blog');">
+				<div class="link-to-right"> 
+					<h6>05</h6>
+					<h4>blog</h4>
+				</div>	
+			</a>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h1><span>04</span> contact</h1>
+				</div>	
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>Send us a message</h4>
+					<div class="subtext">we are looking forward to hear from you</div>
+				</div>
+					<div class="sixteen columns">
+						<form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+							<label for="name">Your Lovely Name: * 
+								<span class="error" id="err-name">please enter name</span>
+							</label>
+							<input name="name" id="name" type="text" />
+							<label for="email">E-Mail: * 
+								<span class="error" id="err-email">please enter e-mail</span>
+								<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+							</label>
+							<input name="email" id="email" type="text" />
+							<label for="message">Tell Us Everything:</label>
+							<textarea name="message" id="message"></textarea>
+							<div id="button-con"><button class="send_message" id="send">Submit</button></div>	
+							<div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
+							<div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+							<div class="error" id="err-state"></div>
+						</form>
+						<div id="ajaxsuccess">Successfully sent!!</div>	 
+					</div>
+			</div>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>AMINO</h6>
+							<p>Информация о приложении:<br>
+							<div class="cl-effect-7">
+								<a href="https://aminoapps.com/c/russkii-anime"><span>Anime Amino</span></a>
+								<a href="https://aminoapps.com"><span>Amino</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>ОСНОВАТЕЛЬ</h6>
+							<p><span class="icon-footer">&#xf095;</span>+7 (996) 770-31-72</p>
+							<a href="mail:icook1e@ya.ru"><p><span class="icon-footer">&#xf086;</span>icook1e@ya.ru</p></a>
+							<p>Отвечаю по выходным:<br>
+							<span>9:00 - 21:00 (+3.00 GMT)</span></p>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<h6>МЫ ТЕБЯ ЖДЁМ</h6>
+						<div class="cl-effect-7">
+							<a href="https://t.me/cubeamino"><span class="twitter-color" >telegram</span></a>
+							<a href="http://aminoapps.com/p/g9b9x2"><span class="google-color" >amino chat</span></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sixteen columns"> 
+						<div class="footer-bottom"> 
+							<p>Copyright © 2014</p>
+							<a href="https://vk.com/mrcook1e"><img src="images/logo.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+	
+		
+		</article>
+
+
+
+		
+		<article id="blog" class="off"> 
+		
+		
+			<a href="javascript:goTo('folio');">
+				<div class="link-to-left"> 
+					<h6>03</h6>
+					<h4>Галерея</h4>
+				</div>	
+			</a>	
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h1><span>04</span> Новости</h1>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<h4>ЧТО У НАС НОВОГО</h4>
+					<div class="subtext">жизнь сообщества</div>
+				</div>	
+			</div>	
+			<ul class="blog-wrap">
+				<!--<li> 
+					<div class="container">
+						<div class="six columns">
+							<div id="owl-demo5" class="owl-carousel owl-theme">
+								<div class="item">
+									<img src="images/blog/4.jpg" alt=""/>	
+								</div> 
+								<div class="item">
+									<img src="images/blog/5.jpg" alt=""/>	
+								</div>
+								<div class="item">
+									<img src="images/blog/6.jpg" alt=""/>	
+								</div>
+								<div class="item">
+									<img src="images/blog/2.jpg" alt=""/>	
+								</div>
+								<div class="item">
+									<img src="images/blog/3.jpg" alt=""/>	
+								</div>
+								<div class="item">
+									<img src="images/blog/7.jpg" alt=""/>	
+								</div>
+							</div> 
+						</div>
+						<div class="ten columns"> 
+							<a href="#"><h6>Post Format - Image Gallery</h6></a>
+							<p>22. January 2014. / Posted by: Admin / Comments:3 / Tags: <a href="#">News</a>, <a href="#">Images</a></p>
+							<p><a href="#">Read more...</a></p>
+						</div>	
+					</div>	
+				</li>-->
+				<li> 
+					<div class="container">
+						<div class="six columns">
+							<img src="images/blog/1.jpg" alt=""/>
+						</div>
+						<div class="ten columns"> 
+							<a href="#"><h6>Открытие  нашего сайта CUBE</h6></a>
+							<p>15. ноября 2019. / Создатель: COOKIE / Tags: <a href="#">Открытие</a>, <a href="#">CUBE</a></p>
+							
+						</div>	
+					</div>	
+				</li>	
+				<!--<li> 
+					<div class="container">
+						<div class="six columns"> 
+							<div class="video-wrap"> 
+								<iframe src="http://player.vimeo.com/video/18130984?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=606060" ></iframe>
+							</div>
+						</div>
+						<div class="ten columns"> 
+							<a href="#"><h6>Post Format - Video</h6></a>
+							<p>27. December 2013. / Posted by: Admin / Comments:4 / Tags: <a href="#">News</a>, <a href="#">Video</a></p>
+							<p><a href="#">Read more...</a></p>
+						</div>	
+					</div>	
+				</li>
+				<li> 
+					<div class="container">
+						<div class="six columns"> 
+							<div class="video-wrap"> 
+								<iframe src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F67943430"></iframe>
+							</div>
+						</div>
+						<div class="ten columns"> 
+							<a href="#"><h6>Post Format - Audio</h6></a>
+							<p>15. December 2013. / Posted by: Admin / Comments:9 / Tags: <a href="#">News</a>, <a href="#">Audio</a></p>
+							<p><a href="#">Read more...</a></p>
+						</div>	
+					</div>	
+				</li>-->
+			</ul>
+			<div class="container">
+				<div class="sixteen columns"> 
+					<div class="line-separator"></div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>AMINO</h6>
+							<p>Информация о приложении:<br>
+							<div class="cl-effect-7">
+								<a href="https://aminoapps.com/c/russkii-anime"><span>Anime Amino</span></a>
+								<a href="https://aminoapps.com"><span>Amino</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<div class="border-right-footer"> 
+							<h6>ОСНОВАТЕЛЬ</h6>
+							<p><span class="icon-footer">&#xf095;</span>+7 (996) 770-31-72</p>
+							<a href="mail:icook1e@ya.ru"><p><span class="icon-footer">&#xf086;</span>icook1e@ya.ru</p></a>
+							<p>Отвечаю по выходным:<br>
+							<span>9:00 - 21:00 (+3.00 GMT)</span></p>
+						</div>
+					</div>
+					<div class="one-third column"> 
+						<h6>МЫ ТЕБЯ ЖДЁМ</h6>
+						<div class="cl-effect-7">
+							<a href="https://t.me/cubeamino"><span class="twitter-color" >telegram</span></a>
+							<a href="http://aminoapps.com/p/g9b9x2"><span class="google-color" >amino chat</span></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sixteen columns"> 
+						<div class="footer-bottom"> 
+							<p>Copyright © 2014</p>
+							<a href="https://vk.com/mrcook1e"><img src="images/logo.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+	
+		
+		</article>
+
+
+		
+	</section>
+	
+	
+	
+	
+	
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.slimmenu.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script> 
+<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/touchSwipe.js"></script>
+<script type="text/javascript" src="js/simpleSlider.js"></script>
+<script type="text/javascript" src="js/backstretch.js"></script>
+<script type="text/javascript" src="js/custom-slider.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>		
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/template.js"></script>  	  
+<!-- End Document
+================================================== -->
 </body>
 </html>
